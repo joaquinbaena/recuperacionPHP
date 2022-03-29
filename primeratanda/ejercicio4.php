@@ -9,16 +9,20 @@
                 $items["item".($i + 1).""] = $_POST["item".($i + 1).""];
             }
         }
-
-        $mayorPuntuacion = max($items);
-
-        foreach($items as $key=> $value){
-            if($mayorPuntuacion == $value){
-                $ganadores .= ", $key";
+        if(!empty($items)){
+            $mayorPuntuacion = max($items);
+    
+            foreach($items as $key=> $value){
+                if($mayorPuntuacion == $value){
+                    $ganadores .= ", $key";
+                }
             }
+            
+            $ganadores = substr($ganadores,2);
+        }else{
+            $procesaFormulario = false;
+            $msgError = "<p>Debes marcar almenos un valor para un Item</p>";
         }
-        
-        $ganadores = substr($ganadores,2);
     }else{
         $procesaFormulario = false;
     }
@@ -64,6 +68,9 @@
     <?php
         if($procesaFormulario){
             echo "<h2>$ganadores son los items con mayor puntuación, con una puntuación de $mayorPuntuacion.</h2>";
+        }
+        if(!empty($msgError)){
+            echo $msgError;
         }
     ?>
 </body>
