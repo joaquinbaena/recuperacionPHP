@@ -1,10 +1,10 @@
 <?php
     $aEjercicios = [
-        ['id'=> 1, 'titulo'=> 'Ejercicio 1','descripcion'=>'Número aleatorio', 'enlace'=>'primeratanda/ejercicio1.php', 'github' =>],
-        ['id'=> 2, 'titulo'=> 'Ejercicio 2','descripcion'=>'Reescritura de contraseñas', 'enlace'=>'primeratanda/ejercicio2.php', 'github' =>],
-        ['id'=> 3, 'titulo'=> 'Ejercicio 3','descripcion'=>'Operaciones aritméticas', 'enlace'=>'primeratanda/ejercicio3.php', 'github' =>],
-        ['id'=> 4, 'titulo'=> 'Ejercicio 4','descripcion'=>'Encuesta', 'enlace'=>'primeratanda/ejercicio4.php', 'github' =>],
-        ['id'=> 5, 'titulo'=> 'Ejercicio 5','descripcion'=>'Figuras Geométricas', 'enlace'=>'primeratanda/ejercicio5.php', 'github' =>]
+        ['id'=> 1, 'titulo'=> 'Ejercicio 1','descripcion'=>'Número aleatorio', 'enlace'=>'primeratanda/ejercicio1.php', 'github' =>'https://github.com/joaquinbaena/recuperacionPHP/blob/main/primeratanda/ejercicio1.php'],
+        ['id'=> 2, 'titulo'=> 'Ejercicio 2','descripcion'=>'Reescritura de contraseñas', 'enlace'=>'primeratanda/ejercicio2.php', 'github' =>'https://github.com/joaquinbaena/recuperacionPHP/blob/main/primeratanda/ejercicio2.php'],
+        ['id'=> 3, 'titulo'=> 'Ejercicio 3','descripcion'=>'Operaciones aritméticas', 'enlace'=>'primeratanda/ejercicio3.php', 'github' =>'https://github.com/joaquinbaena/recuperacionPHP/blob/main/primeratanda/ejercicio3.php'],
+        ['id'=> 4, 'titulo'=> 'Ejercicio 4','descripcion'=>'Encuesta', 'enlace'=>'primeratanda/ejercicio4.php', 'github' =>'https://github.com/joaquinbaena/recuperacionPHP/blob/main/primeratanda/ejercicio4.php'],
+        ['id'=> 5, 'titulo'=> 'Ejercicio 5','descripcion'=>'Figuras Geométricas', 'enlace'=>'primeratanda/ejercicio5.php', 'github' =>'https://github.com/joaquinbaena/recuperacionPHP/blob/main/primeratanda/ejercicio5.php']
     ];
 ?>
 <!DOCTYPE html>
