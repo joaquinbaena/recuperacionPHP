@@ -17,53 +17,54 @@
             "Aragón" => ["Huesca", "Zaragoza", "Teruel"]
     ];
 
-    // array con notas de alumnos de primera y segunda evaluacacion
-    // $aNotas = [
-    //     "Alberto" => [
-    //         "primera" => [
-    //             "DWEC" => 5,
-    //             "DWES" => 6,
-    //             "DIW" => 7,
-    //             "DAW" => 8,
-    //             "HLC" => 9
-    //         ],
-    //         "segunda" => [
-    //             "DWEC" => 6,
-    //             "DWES" => 7,
-    //             "DIW" => 8,
-    //             "DAW" => 9,
-    //             "HLC" => 10
-    //         ]
-    //     ],
-    //     "Ana" => [
-    //         "primera" => [
-    //             "DWEC" => 7,
-    //             "DWES" => 8,
-    //             "DIW" => 9,
-    //             "DAW" => 10,
-    //             "HLC" => 9
-    //         ],
-    //         "segunda" => [
-    //             "DWEC" => 8,
-    //             "DWES" => 9,
-    //             "DIW" => 10,
-    //             "DAW" => 9,
-    //             "HLC" => 8
-    //         ]
-    //     ],
-    //     "Juan" => [
-    //         "primera" => [
-    //             "DWEC" => 9,
-    //             "DWES" => 10,
-    //             "DIW" => 9,
-    //             "DAW" => 8,
-    //             "HLC" => 7
-    //         ],
-    //         "segunda" => [
-    //             "DWEC" => 10,
-    //             "DWES" => 9,
-    //             "DIW" => 8,
-    //             "DAW" => 7,
-    //             "HLC" => 6
-    //         ]
-    //         ];
+
+    $aNotas = [
+        "Alberto" => [
+            "primeraEV" => [
+                "DWEC" => 5,
+                "DWES" => 3,
+                "DIW" => 7,
+                "DAW" => 2,
+                "HLC" => 4
+            ],
+            "segundaEV" => [
+                "DWEC" => 4,
+                "DWES" => 4,
+                "DIW" => 8,
+                "DAW" => 3,
+                "HLC" => 6
+            ]
+        ],
+        "Ana" => [
+            "primeraEV" => [
+                "DWEC" => 2,
+                "DWES" => 4,
+                "DIW" => 7,
+                "DAW" => 5,
+                "HLC" => 1
+            ],
+            "segundaEV" => [
+                "DWEC" => 8,
+                "DWES" => 9,
+                "DIW" => 10,
+                "DAW" => 9,
+                "HLC" => 4
+            ]
+        ],
+        "Juan" => [
+            "primeraEV" => [
+                "DWEC" => 7,
+                "DWES" => 10,
+                "DIW" => 5,
+                "DAW" => 8,
+                "HLC" => 7
+            ],
+            "segundaEV" => [
+                "DWEC" => 10,
+                "DWES" => 9,
+                "DIW" => 6,
+                "DAW" => 7,
+                "HLC" => 3
+            ]
+        ]
+    ];
