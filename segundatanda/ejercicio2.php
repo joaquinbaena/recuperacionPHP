@@ -6,14 +6,16 @@
         $procesaFormulario = true;
         $aRespuestas = $_POST['paises'];
         foreach($aPaises as $pais => $capital){
-            if($aRespuestas[$pais] == $capital){
-                $aciertos++;
-            }else{
-                $fallos++;
-            }
+            ($aRespuestas[$pais] == $capital) ? $aciertos++ : $fallos++;
         }
     }else{
         $procesaFormulario = false;
+    }
+
+    if(isset($_POST['respuestas'])){
+        $procesaRespuestas = true;
+    }else{
+        $procesaRespuestas = false;
     }
 ?>
 <!DOCTYPE html>
@@ -38,6 +40,7 @@
         ?>
         <p>
             <input type="submit" value="Enviar" name="enviar">
+            <input type="submit" value="Respuestas" name="respuestas">
         </p>
     </form>
 
@@ -46,6 +49,15 @@
             echo "<h2>Resultados</h2>";
             echo "<p>Aciertos: ".$aciertos."</p>";
             echo "<p>Fallos: ".$fallos."</p>";
+        }
+
+        if($procesaRespuestas){
+            echo "<h2>Respuestas</h2>";
+            echo "<table border='2' halign='center'>";
+            foreach($aPaises as $pais => $capital){
+                echo "<tr><td>".$pais."</td><td>".$capital."</td></tr>";
+            }
+            echo "</table>";
         }
     ?>
 </body>
